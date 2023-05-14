@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--bcg-color-body);
+}
+
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calc-box{
+    padding: 5px;
+    background-color: var(--bcg-color-calc-box);
+    border-radius: 5px;
+    width: 17vw;
+}
+
+.equal{
+    grid-area: 3/3/1/5;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-top: 3px;
+    margin-bottom: -4px;
+}
+
+
+.btn-box input[value='-'],[value='x'],[value='+'],[value='='],[value='*']{
+    background-color: var(--bcg-btn-box-input) !important;
+    font-size: 1.3rem !important;
+    color: white !important;
+}
+
+#para{
+    text-align: right;
+    font-size: 1.3rem;
+    color: var(--color-input-box-input);
+    height: 5vh;
+}
+
+.f-row input{
+    background-color: var(--bcg-f-row-input) !important;
+    color: var(--color-input-box-input) !important;
+}
+
+.btn-box button{
+    background-color: var(--bcg-btn-box-input) !important;
+    font-size: 80%;
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white ;
+    border: var(--border-btn-box-input);
+    /* border: solid; */
+}
+
+.btn-box input{
+    font-size: 80%;
+    height: 5vh;
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-input-box-input);
+    border: var(--border-btn-box-input);
+    background-color: var(--bcg-btn-box-input-num);
+
+}
+
+.input-box > input{
+    height: 12vh;
+    width: 17vw;
+    color: var(--color-input-box-input);
+    outline: none;
+    font-size: 2rem !important;
+    font-weight:lighter;
+    border: none;
+    background-color: transparent !important;
+    text-align: right;
+}
+
+.input-box input::placeholder{
+    color: --color-input-box-input;
+}
+
+.dark-theme{
+    --bcg-color-body: rgba(0, 0, 0, 0.766);
+    --bcg-color-calc-box: rgba(255, 255, 255, 0.897);
+    --bcg-btn-box-input : rgba(5, 117, 245, 0.982);
+    --bcg-f-row-input : rgba(37, 36, 36, 0.244);
+    --color-input-box-input : black;
+    --bcg-btn-box-input-num : white;
+    --border-btn-box-input : none;
+}
+
+.light-theme{
+    --bcg-color-body: aliceblue;
+    --bcg-color-calc-box: rgba(0, 0, 0, 0.623);
+    --bcg-btn-box-input : rgba(245, 193, 5, 0.982);
+    --bcg-f-row-input : rgba(37, 36, 36, 0.389);
+    --color-input-box-input : white;
+    --border-btn-box-input : 1px solid rgba(0, 0, 0, 0.623);
+}
+
+
+.img{
+    height: 3vh;    
+    cursor: pointer;
+    mix-blend-mode: multiply;
+    
+}
